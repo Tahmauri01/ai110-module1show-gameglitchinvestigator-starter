@@ -14,9 +14,26 @@ Document at least 3 bugs you found. Add rows as needed.
 
 | Input | Expected Behavior | Actual Behavior | Console Output / Error |
 |-------|-------------------|-----------------|------------------------|
-| | | | |
-| | | | |
-| | | | |
+|guess  |"Go Lower" hint    |"Go Higher" hint | none                   |
+|of 33  |                   |                 |                        |
+|-------|-------------------|-----------------|------------------------|
+|guess  |"Go Higher" hint   |"Go Lower" hint  | none                   |
+|of 31  |                   |                 |                        |
+|-------|-------------------|-----------------|------------------------|
+|pressed|Game to restart    |Old game data st-| none                   |
+|"New   |                   |ays and new game |                        |
+|Game"  |                   |is not started   |                        |
+|button |                   |                 |                        |
+|-------|-------------------|-----------------|------------------------|
+|changed|Hard mode to have  |Normal mode has  | none                   |
+|diffic-|the largest range  |largest range and|                        |
+|ulty   |and least attempts,|most attempts, r-|                        |
+|       |easy mode have the |ange does not ch-|                        |
+|       |most attempts, and |ange             |                        |
+|       |for the range      |                 |                        |
+|       |to change when swi-|                 |                        |
+|       |tching difficulty  |                 |                        |
+|-------|-------------------|-----------------|------------------------|
 
 ---
 
