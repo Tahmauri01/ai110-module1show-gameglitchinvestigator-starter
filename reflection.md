@@ -12,12 +12,12 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 
 Document at least 3 bugs you found. Add rows as needed.
 
-| Input | Expected Behavior | Actual Behavior | Console Output / Error |
+| Input | Expected Behavior | Actual Behavior | Console Output / Error | 
 |-------|-------------------|-----------------|------------------------|
-|guess  |"Go Lower" hint    |"Go Higher" hint | none                   |
+|guess  |"Go Lower" hint    |"Go Higher" hint | none                   |   Fixed
 |of 33  |                   |                 |                        |
 |-------|-------------------|-----------------|------------------------|
-|guess  |"Go Higher" hint   |"Go Lower" hint  | none                   |
+|guess  |"Go Higher" hint   |"Go Lower" hint  | none                   |   Fixed
 |of 31  |                   |                 |                        |
 |-------|-------------------|-----------------|------------------------|
 |pressed|Game to restart    |Old game data st-| none                   |
@@ -25,7 +25,7 @@ Document at least 3 bugs you found. Add rows as needed.
 |Game"  |                   |is not started   |                        |
 |button |                   |                 |                        |
 |-------|-------------------|-----------------|------------------------|
-|changed|Hard mode to have  |Normal mode has  | none                   |
+|changed|Hard mode to have  |Normal mode has  | none                   |   Fixed
 |diffic-|the largest range  |largest range and|                        |
 |ulty   |and least attempts,|most attempts, r-|                        |
 |       |easy mode have the |ange does not ch-|                        |
@@ -34,12 +34,12 @@ Document at least 3 bugs you found. Add rows as needed.
 |       |to change when swi-|                 |                        |
 |       |tching difficulty  |                 |                        |
 |-------|-------------------|-----------------|------------------------|
-|guess  |Score gets subtrac-|Score goes up    | none                   |
+|guess  |Score gets subtrac-|Score goes up    | none                   |   Fixed
 |that is|ted                |                 |                        |
 |too hi-|                   |                 |                        |
 |gh     |                   |                 |                        |
 |-------|-------------------|-----------------|------------------------|
-|guess 9|Hint to say "Go Hi-|Hint says "Go Lo-| none                   |
+|guess 9|Hint to say "Go Hi-|Hint says "Go Lo-| none                   |   Fixed
 |on an  |gher"              |wer"             |                        |
 |even a-|                   |                 |                        |
 |ttempt |                   |                 |                        |
