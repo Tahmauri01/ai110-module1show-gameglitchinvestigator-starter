@@ -1,4 +1,4 @@
-from logic_utils import check_guess, update_score
+from logic_utils import check_guess, update_score, get_range_for_difficulty
 
 
 def test_winning_guess():
@@ -56,3 +56,32 @@ def test_too_high_penalty_matches_too_low():
         high = update_score(current_score=50, outcome="Too High", attempt_number=attempt)
         low = update_score(current_score=50, outcome="Too Low", attempt_number=attempt)
         assert high == low == 45
+
+
+# --- Regression tests for the difficulty-range bug ---
+# Hard should have the widest range and Easy the narrowest, and each
+# difficulty must produce a distinct range. The original code gave Normal
+# the widest range (1-100) and Hard only 1-50.
+
+def _span(difficulty):
+    low, high = get_range_for_difficulty(difficulty)
+    return high - low
+
+
+def test_each_difficulty_has_a_distinct_range():
+    # Regression: switching difficulty used to leave the range unchanged.
+    ranges = {
+        d: get_range_for_difficulty(d) for d in ("Easy", "Normal", "Hard")
+    }
+    assert len(set(ranges.values())) == 3
+
+
+def test_hard_has_the_largest_range():
+    # Regression: Normal (1-100) used to be wider than Hard (1-50).
+    assert _span("Hard") > _span("Normal") > _span("Easy")
+
+
+def test_expected_range_values():
+    assert get_range_for_difficulty("Easy") == (1, 20)
+    assert get_range_for_difficulty("Normal") == (1, 50)
+    assert get_range_for_difficulty("Hard") == (1, 100)
