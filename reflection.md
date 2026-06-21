@@ -34,8 +34,17 @@ Document at least 3 bugs you found. Add rows as needed.
 |       |to change when swi-|                 |                        |
 |       |tching difficulty  |                 |                        |
 |-------|-------------------|-----------------|------------------------|
+|guess  |Score gets subtrac-|Score goes up    | none                   |
+|that is|ted                |                 |                        |
+|too hi-|                   |                 |                        |
+|gh     |                   |                 |                        |
+|-------|-------------------|-----------------|------------------------|
+|guess 9|Hint to say "Go Hi-|Hint says "Go Lo-| none                   |
+|on an  |gher"              |wer"             |                        |
+|even a-|                   |                 |                        |
+|ttempt |                   |                 |                        |
+|-------|-------------------|-----------------|------------------------|
 
----
 
 ## 2. How did you use AI as a teammate?
 
