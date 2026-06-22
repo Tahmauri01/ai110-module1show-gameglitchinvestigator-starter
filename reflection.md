@@ -84,11 +84,21 @@ The AI helped designed the test cases by importing then running the functions fr
 
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
 
+Streamlit rerun stops the program from running anything after it is called then restarts the program. Streamlit session state are the key variables that are needed to share data in between sessions which is used in a rerun.
+
 ---
 
 ## 5. Looking ahead: your developer habits
 
 - What is one habit or strategy from this project that you want to reuse in future labs or projects?
   - This could be a testing habit, a prompting strategy, or a way you used Git.
+
+One habit I want to take away is putting my variables in a separate file to make the code less cluttered and easier to follow.
+
 - What is one thing you would do differently next time you work with AI on a coding task?
+
+One thing I will do differently is attempt to first fix the bugs myself instead of asking the AI to do it first.
+
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
+
+AI generated code comes with a lot more mistakes than I had previously thought. This shows me that software engineers are needed to make sure the code is clean with no bugs.

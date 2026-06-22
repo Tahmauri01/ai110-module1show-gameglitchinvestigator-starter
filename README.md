@@ -25,19 +25,22 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+- A game to test your guessing skills while also being fun a interactive
+- Game would tell you to "Go Lower" when you needed to go higher and vice versa, new game button did not work, score went up on some wrong guesses, guesses were sometimes read as a string, difficulies did not have the right attempt amounts or range, changing difficulies had no effect.
+- Switched print messages for "Go Higher" and "Go Lower" hints, reset score, history, and status when new game button is pressed, removed feature where guesses that were even guesses turned into strings, changed the attempt amounts and ranges for each difficulty.
 
 ## 📸 Demo Walkthrough
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. User enters a guess of 20
+2. Game hint says guess is "Too low"
+3. User enters a guess of 40
+4. Game hint says guess is "Too high"
+5. Every wrong guess subtracts points
+6. The game ends when user runs out of attempts or guesses the correct number
+7. User changes the difficulty on the left-hand side 
+8. User presses new game to play again
 
 **Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
 
