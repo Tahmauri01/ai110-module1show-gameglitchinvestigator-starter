@@ -3,6 +3,7 @@ import streamlit as st
 
 from logic_utils import check_guess, get_range_for_difficulty, update_score
 
+# Fixed logic moved to logic_utils.py
 
 def parse_guess(raw: str):
     if raw is None:
@@ -21,6 +22,7 @@ def parse_guess(raw: str):
 
     return True, value, None
 
+# Fixed logic moved to logic_utils.py
 
 st.set_page_config(page_title="Glitchy Guesser", page_icon="🎮")
 
